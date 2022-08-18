@@ -27,6 +27,7 @@ namespace practice1
 
             Console.WriteLine("Hello");
             Console.Write(DateTime.Now);
+            Console.WriteLine();
 
             Console.ReadLine();
         }
