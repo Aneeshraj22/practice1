@@ -1,0 +1,307 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace assingment1
+{
+    internal class Program
+
+    //pro 1
+    {
+        //    static void Main(string[] args)
+        //    {
+        //        int n1 = 5, n2 = 6;
+        //        Swapbyvalue(n1, n2);
+        //        Console.WriteLine("actual value of n1=" + n1);
+        //        Console.WriteLine("actual value of n2=" + n2);
+        //        Console.WriteLine("------------------------");
+
+
+        //        Swapbyreference(ref n1, ref n2);
+        //        Console.WriteLine("actual value of n1=" + n1);
+        //        Console.WriteLine("actual value of n2=" + n2);
+        //        Console.WriteLine("------------------------");
+        //        Console.ReadLine();
+
+        //    }
+        //    static void Swapbyreference(ref int n1, ref int n2)
+        //    {
+        //        int n3 = n1;
+        //        n1 = n2;
+        //        n2 = n3;
+        //        Console.WriteLine("swapped value of n1=" + n1);
+        //        Console.WriteLine("swaped value of n2=" + n2);
+
+        //    }
+        //    static void Swapbyvalue(int n1, int n2)
+        //    {
+        //        int n3 = n1;
+        //        n1 = n2;
+        //        n2 = n3;
+        //        Console.WriteLine("swapped value of n1=" + n1);
+        //        Console.WriteLine("swaped value of n2=" + n2);
+        //    }
+        //}
+
+
+
+
+        //pro 2
+
+
+        //static void Main(string[] args)
+        //{
+        //    int num1, num2, num3;
+        //    Console.WriteLine("first number to multiply:");
+        //    num1 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("second number to multiply:");
+        //    num2 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Third number to multiply:");
+        //    num3 = Convert.ToInt32(Console.ReadLine());
+
+        //    int result = num1 * num2 * num3;
+        //    Console.WriteLine(result);
+
+        //    Console.ReadLine();
+        //}
+
+        //pro 3
+
+
+        //static void Main(string[] args)
+        //{
+        //    int num1, num2;
+        //    Console.WriteLine("first number:");
+        //    num1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("second number :");
+        //    num2 = Convert.ToInt32(Console.ReadLine());
+
+        //    int add, sub, mul, div, mod;
+        //    add = num1 + num2;
+        //    Console.WriteLine(add);
+        //    sub = num1 - num2;
+        //    Console.WriteLine(sub);
+        //    mul = num1 * num2;
+        //    Console.WriteLine(mul);
+        //    div = num1 / num2;
+        //    Console.WriteLine(div);
+        //    mod = num1 % num2;
+        //    Console.WriteLine(mod);
+        //    Console.ReadLine();
+
+        //}
+
+
+        //pro 4
+
+        //static void Main(string[] args)
+        //{
+        //    int num1, num2, num3, num4;
+        //    Console.WriteLine("first number:");
+        //    num1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("second number:");
+        //    num2 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("third number:");
+        //    num3 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("fourth number:");
+        //    num4 = Convert.ToInt32(Console.ReadLine());
+
+        //    int avg = (num1 + num2 + num3 + num4) / 4;
+        //    Console.WriteLine("The average of{0},{1},{2},{3} is={4}", num1, num2, num3, num4, avg);
+
+        //    Console.ReadLine();
+
+        //}
+
+
+        //pro 5
+
+
+        //static void Main(string[] args)
+        //{
+        //    int a, b, c;
+        //    Console.WriteLine("first no");
+        //    a=Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("sec no");
+        //    b=Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("third no");
+        //    c=Convert.ToInt32(Console.ReadLine());
+        //    int res = (a + b) * c;
+        //    int res1 = a * b + b * c;
+        //    Console.WriteLine("result id={0},{1}",res,res1);
+        //    Console.ReadLine();
+
+        //}
+
+        //pro 6
+
+        //static void Main(string[] args)
+        //{
+        //    double usd, v = 71, inr;
+        //    Console.WriteLine("enter usd to changed=");
+        //    usd=Convert.ToDouble(Console.ReadLine());
+        //    inr = usd * v;
+        //    Console.WriteLine("inr is={0}",inr);
+        //    Console.ReadLine();
+        //}
+
+
+        // prop 7
+
+        //static void Main(string[] args)
+
+        //{
+        //    int age;
+        //    Console.WriteLine("Enter your age");
+        //    age = Convert.ToInt32(Console.ReadLine());
+        //    if (age != 0)
+        //        Console.WriteLine("Your look older than {0}", age);
+
+        //    Console.ReadLine();
+        //}
+
+
+        ///pro 8
+
+
+        //static void Main(string[] args)
+        //{
+
+        //        int num;
+        //        Console.WriteLine("Enter a number");
+        //        num = Convert.ToInt32(Console.ReadLine());
+        //        Console.WriteLine("{0}{0}{0}", num);
+        //        Console.WriteLine("{0} {0}", num);
+        //        Console.WriteLine("{0} {0}", num);
+        //        Console.WriteLine("{0} {0}", num);
+        //        Console.WriteLine("{0}{0}{0}", num);
+
+        //        Console.ReadLine();
+
+        //    }
+
+
+
+        //pro 9
+
+
+        //static void Main(string[] args)
+        //{
+        //    int num;
+        //    Console.WriteLine("Enter a digit");
+        //    num = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("{0} {0} {0} {0}", num);
+        //    Console.WriteLine("{0} {0} {0} {0}", num);
+        //    Console.WriteLine("{0} {0} {0} {0}", num);
+        //    Console.WriteLine("{0} {0} {0} {0}", num);
+
+        //    Console.ReadLine();
+
+        //}
+
+
+        //pro 10
+
+
+
+        // static void Main(string[] args)
+        //{ 
+
+        //    int celsius;
+        //    Console.WriteLine("Enter the amount of celsius:");
+        //    celsius = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Kelvin={0}", celsius + 273);
+        //    Console.WriteLine("Fahrenheit={0}", celsius * 18 / 10 + 32);
+
+        //    Console.ReadLine();
+        //}
+
+
+        //pro 11
+
+
+        //static void Main(string[] args)
+        //{
+        //    int n1, n2;
+        //    Console.WriteLine("First integer:");
+        //    n1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Second integer:");
+        //    n2 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Check if two integers is positive");
+        //    Console.WriteLine(n1 < 0 && n2 > 0);
+
+        //    Console.ReadLine();
+        //}
+
+
+        //pro 12
+
+        //static void Main(string[] args)
+        //{
+        //    int n1, n2;
+        //    Console.WriteLine("First integer:");
+        //    n1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Second integer:");
+        //    n2 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Check if two integers is positive");
+        //    Console.WriteLine(n1 > 0 && n2 > 0);
+        //    Console.ReadLine();
+        //}
+
+        //pro 13
+
+
+        //static void Main(string[] args)
+        //{
+        //    int met, km;
+        //    Console.WriteLine("dist in meter:");
+        //    met=Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("dist in km:");
+        //    km=Convert.ToInt32(Console.ReadLine());
+
+        //    double kilometer = met / 1000;
+        //    int meter = km * 1000;
+        //    Console.WriteLine("dis in km:{1}", kilometer);
+        //    Console.WriteLine("dis in met:{0}",meter);
+        //    Console.ReadLine();
+        //}
+
+
+        //pro 14
+
+
+        //static void Main(string[] args)
+        //{
+        //    string str = "";
+        //    Console.WriteLine(string.IsNullOrEmpty(str));
+
+        //    Console.ReadLine();
+        //}
+
+
+        //pro 15
+
+
+        //static void Main(string[] args)
+        //{
+        //    int celsius;
+        //    Console.WriteLine("Enter the amount of celsius:");
+        //    celsius = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Fahrenheit={0}", celsius * 9 / 5 + 32);
+
+        //    Console.ReadLine();
+        //}
+
+
+
+    }
+
+}
+    
