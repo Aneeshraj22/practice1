@@ -1,0 +1,402 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace assignment2
+{
+    internal class Program
+    {
+        //static void Main(string[] args)
+        //{
+        //    int n1, n2;
+        //    int min, max;
+
+        //    Console.WriteLine("First number:");
+        //    n1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Second number:");
+        //    n2 = Convert.ToInt32(Console.ReadLine());
+
+        //    if (n1 > n2)
+        //        max = n1;
+        //    else
+        //        max = n2;
+
+        //    if (n1 < n2)
+        //        min = n1;
+        //    else
+        //        min = n2;
+
+        //    Console.WriteLine("maximum number={0}", max);
+        //    Console.WriteLine("minimum number={0}", min);
+
+        //    Console.ReadLine();
+
+
+        //pro 2
+
+        //    static void Main(string[] args)
+        //{
+        //    int a=2,b=3,c=4;
+        //    Console.WriteLine("largst of 3 num");
+        //    if(a>b && a>c)
+        //    {
+        //        Console.WriteLine("a is larger");
+        //    }
+        //    else if(b>a && b>c)
+        //        {
+        //        Console.WriteLine("b is large");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("c is large");
+        //    }
+        //    Console.ReadLine();
+        //}
+
+
+        //pro 3
+
+
+        //static void Main(string[] args)
+        //{
+        //    char c1, c2;
+
+        //    Console.WriteLine("Enter the first character : ");
+        //    c1 = Console.ReadLine()[0];
+
+        //    Console.WriteLine("Enter the second character : ");
+        //    c2 = Console.ReadLine()[0];
+
+        //    if (c1 == c2)
+        //        Console.WriteLine(" characters are equal");
+        //    else
+        //        Console.WriteLine("Characters are not equal");
+        //    Console.ReadLine();
+        //}
+        //pro 4
+
+
+        //static void Main(string[] args)
+        //    string c1 , c2;
+        //    Console.WriteLine("enter str 1");
+        //    c1 = Console.ReadLine();
+        //    Console.WriteLine("enter str 2");
+        //    c2 = Console.ReadLine();
+
+
+        //    if (c1 == c2)
+        //        Console.WriteLine(" str are equal");
+        //    else
+        //        Console.WriteLine("str are not equal");
+        //    Console.ReadLine();
+        //}
+
+        //pro 5
+
+
+        //static void Main(string[] args)
+        //{
+        //    int a, b;
+        //    Console.WriteLine("enter no 1");
+        //    a = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("enter no 2");
+        //    b = Convert.ToInt32(Console.ReadLine());
+        //    if (a > b)
+        //        Console.WriteLine(" a is biggest");
+        //    else
+        //        Console.WriteLine("b is biggest");
+        //    Console.Read();
+        //}
+
+
+        //pro 6
+
+        //        static void Main(string[] args)
+        //        {
+        //            int a;
+        //            Console.WriteLine("enter a year:");
+        //           a= Convert.ToInt32(Console.ReadLine());
+        //            if (a%400==0)
+        //            {
+        //                Console.WriteLine("is a leap year");
+
+        //            }
+        //            else
+        //            {
+        //                Console.WriteLine(" not a leap year");
+        //            }
+        //            Console.Read();
+        //}
+
+
+        //pro 7
+
+        //static void Main(string[] args)
+        //{
+        //    int mh, ph, ch;
+        //    Console.WriteLine("enter mh mark");
+        //    mh =Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("enter ph mark");
+        //    ph =Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine(" enter ch mark");
+        //    ch =Convert.ToInt32(Console.ReadLine());
+
+        //    int mark = mh + ph + ch ;
+        //    Console.WriteLine("enter mark:{0}", mark);
+        //    int perc = (mh + ph + ch )/ 3;
+        //    Console.WriteLine("enter per:{0}", perc);
+        //    if (perc > 60)
+        //        Console.WriteLine("first");
+        //    else if (perc < 60 && perc > 45)
+        //        Console.WriteLine("sec");
+        //    else if (perc < 45 && 35 < perc)
+        //        Console.WriteLine("third");
+        //    else
+        //        Console.WriteLine("fail");
+        //    Console.ReadLine();
+
+
+        //  }
+
+
+
+        //pro 8
+
+
+        //static void Main(string[] args)
+        //{
+        //    int  n,a=0;
+        //    Console.WriteLine(" enter no:");
+        //    n=Convert.ToInt32(Console.ReadLine());
+        //    for (int i = 1; i < n; i++)
+        //    {
+        //        int c = 2 * i - 1;
+        //        Console.WriteLine( c);
+        //        a += c;
+
+        //    }
+        //    Console.WriteLine("{0} term :{1}",n , a);
+        //    Console.Read();
+
+
+
+
+
+
+
+        //}
+
+
+        //pro 9
+
+
+        //static void Main(string[] args)
+        //{
+        //    for(int i = 1; i <=5; i++)
+        //    {
+        //        for (int j = 1; j <= i; j++)
+        //            Console.Write("*");
+        //       Console.WriteLine();
+        //    }
+        //    Console.ReadLine();
+
+        //}
+
+
+
+        //pro 10
+
+        //static void Main(string[] args)
+        //{
+        //    int num, rev = 0, rem;
+        //    Console.WriteLine("enter a num to rev");
+        //    num = int.Parse(Console.ReadLine());
+        //    while(num!=0)
+        //    {
+        //        rem = num % 10;
+        //        rev = rev * 10 + rem;
+        //        num /= 10;
+
+        //    }
+        //    Console.WriteLine("rev{0}:",+rev);
+        //    Console.ReadKey();  
+        //}
+
+
+        // pro 11
+
+
+        //static void Main(string[] args)
+        //{
+        //    int i, sum = 0;
+        //    Console.WriteLine("divisible by 9");
+        //    for (i = 100; i <= 200; i++)
+        //    {
+        //        if (i % 9 == 0)
+        //            sum += i;
+
+        //    }
+        //    Console.WriteLine("sum{0}:", +sum);
+        //    Console.ReadKey();
+
+        //}
+
+
+        //pro 12
+
+        //static void Main(string[] args)
+        //{
+        //    int a;
+        //    Console.WriteLine("Enter the number");
+        //    a=Convert.ToInt32(Console.ReadLine());
+        //    if (a == 0)
+        //        Console.WriteLine("value is zero");
+        //    else if (a % 2 != 0)
+        //        Console.WriteLine("value is odd");
+        //     if (a % 2 == 0)
+        //        Console.WriteLine("value is even");
+        //     if (a % 10 == 0)
+        //        Console.WriteLine("mult of 10");
+        //    else
+        //        Console.WriteLine("too large");
+        //    Console.ReadKey();
+
+        //}
+
+        //pro 13
+
+
+        //static void Main(string[] args)
+        // {
+        //     {
+        //         int n,num;
+        //         Console.WriteLine("Enter the number:");
+        //         n = Convert.ToInt32(Console.ReadLine());
+        //         num = Convert.ToInt32(Console.ReadLine());
+        //         switch (n%2)
+        //         {
+        //             case 0:
+        //                 Console.WriteLine("even");
+        //                 if(n==0)
+        //                 Console.WriteLine("zero");                     
+
+        //                if (n % 10 == 0)
+        //                     Console.WriteLine("mutiple by 10");
+
+        //                 if (n >= 100)
+        //                     Console.WriteLine("too large");
+        //                 break;
+
+        //             case 1:
+        //                 Console.WriteLine("odd");
+        //                 if (n>=100)
+        //                 Console.WriteLine("To large");
+        //                 break;
+
+
+        //         }
+
+        //         Console.Read();
+
+
+
+
+
+
+
+        //         //pro 15
+
+
+
+        //         //static void Main(string[] args)
+        //         //{
+        //         //    int i, j;
+        //         //    for (i = 0, j = 25; ; i++,j--)
+        //         //        {
+        //         //        if (i > j)
+        //         //            Console.WriteLine("crossover");
+        //         //        else 
+        //         //            Console.WriteLine("{0},{1}",i,j);
+        //         //        Console.ReadLine();
+        //         //    }
+
+
+
+
+
+
+
+
+        //         //}
+
+        //         //pro 16
+
+
+        //         //static void Main(string[] args)
+        //         //{
+        //         //    int p = 100, count = 0;
+        //         //    while (count < 4)
+        //         //    {
+        //         //        string s = Console.ReadLine();
+        //         //        if (s == "hit")
+        //         //        {
+        //         //            p += 10;
+        //         //        }
+        //         //        else if (s == "miss")
+        //         //        {
+        //         //            p -= 20;
+        //         //        }
+        //         //        else
+        //         //        {
+        //         //            Console.WriteLine(" invalid input");
+        //         //            break;
+        //         //        }
+        //         //        count++;
+        //         //    }
+        //         //    Console.WriteLine(p);
+        //         //    Console.ReadLine();
+
+
+
+
+        //         //}
+
+
+
+
+        //     }
+        // }
+
+
+        // Day two missed problem  pro 16
+
+
+        //static void Main(string[] args)
+        //{
+        //    Console.WriteLine(" enter first name");
+        //    string fname=Console.ReadLine();
+        //    Console.WriteLine("enter last name");
+        //    string lname=Console.ReadLine();
+        //    Console.WriteLine("{0}=userid",fname);
+        //    Console.WriteLine("{0}=password",lname);
+        //    Console.WriteLine("welcome to my app");
+        //        Console.ReadLine();
+
+
+        //}
+    }
+}
+
+
+
+
+    
+
+
+
+
