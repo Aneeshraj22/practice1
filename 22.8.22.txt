@@ -1,0 +1,360 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
+
+namespace assignment3
+{
+    internal class Program
+
+    {
+        //static void Main(string[] args)
+        //{
+        //    int[] arr = new int[10];
+        //    int i;
+        //    Console.WriteLine("enter 10 input");
+        //    for(i = 0; i < 10; i++)
+        //    {
+        //        Console.Write("element-{0}:",i);
+        //        arr[i] = Convert.ToInt32(Console.ReadLine());
+        //    }
+        //    Console.WriteLine("enter the array-");
+        //    for(i = 0; i < 10; i++)
+        //    {
+        //        Console.Write("{0}"+arr[i]);
+
+        //    }
+        //    Console.ReadLine();
+        //}
+
+
+        //problem 2
+
+        //static void Main(string[] args)
+        //{
+        //    int[] arr=new int[3] {2,5,7} ;
+        //    int i;
+
+        //    for (i = 0; i < arr.Length; i++)
+        //    {
+        //        Console.WriteLine("Element-{0}",i);
+        //    }
+        //    Array.Sort(arr);
+        //    Console.WriteLine("value  reverse");
+        //    foreach (var item in arr)
+        //    {
+        //      Console.WriteLine(item);  
+        //    }
+        //    Array.Reverse(arr);
+        //    Console.WriteLine("value  reverse");
+        //    foreach (var item in arr)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+
+        //    Console.ReadKey();
+        //}
+
+
+        //Program 3
+
+
+        //static void Main(string[] args)
+        //{
+        //    int[] arr=new int[3];
+        //    int i,sum=0;
+        //    Console.WriteLine("enter inputs");
+        //    for(i = 0; i < arr.Length; i++)
+        //    {
+        //        Console.WriteLine("element {0}",i);
+        //        arr[i] =Convert.ToInt32(Console.ReadLine());
+        //        sum += arr[i];
+        //    }
+        //    Console.WriteLine("sum of value{0}:",sum);
+        //    Console.ReadLine();
+        //}
+
+
+        //problem 6
+
+
+
+        //static void Main(string[] args)
+        //{
+        //    Stack s=new Stack();
+        //    s.Push("red");
+        //    s.Push("blue");
+        //    s.Push("green");
+        //    s.Push("orange");
+        //    Console.WriteLine("count ="+s.Count);
+        //    Console.WriteLine("top element="+ s.Peek());
+        //    object s1=s.Pop();
+        //    Console.WriteLine("pop"+ s1);
+        //    Console.ReadKey();
+
+        //}
+
+
+        //problem  7
+
+        //static void Main(string[] args)
+        //{
+        //    Queue q=new Queue();
+        //    q.Enqueue(11);
+        //    q.Enqueue(12);
+        //    q.Enqueue(123);
+        //    Console.WriteLine(" peek:"+q.Peek());
+        //    object q1 = q.Dequeue();
+        //    Console.WriteLine("dequeue:"+ q1);
+        //    Console.WriteLine("count =" + q.Count);
+        //    Console.WriteLine(" peek:" + q.Peek());
+        //    Console.ReadKey();
+        //}
+
+
+        //problem 4
+
+        //static void main(string[] args)
+        //{
+
+        //    arraylist mylist = new arraylist(10);
+
+
+        //    mylist.add("a");
+        //    mylist.add("b");
+        //    mylist.add("c");
+        //    mylist.add("d");
+        //    mylist.add("e");
+        //    mylist.add(12);
+
+
+        //    console.writeline("value listed first:");
+
+        //    foreach (var str in mylist)
+        //        console.writeline(str);
+
+
+        //    mylist.remove("a");
+
+
+        //    console.writeline("value  listed after:");
+
+        //    foreach (var str in mylist)
+        //        console.writeline(str);
+        //    console.readline();
+        //}
+
+
+
+        //problem 8
+
+
+
+        static void main(string[] args)
+        {
+            hashtable h=new hashtable();
+           h.add(1, "red");
+           h.add(2, "blue");
+           h.add(3, "pink");
+           idictionaryenumerator ie = h.getenumerator();
+           foreach (dictionaryentry item in h)
+           {
+                console.writeline(item.key+ " " +item.value);
+            }
+          console.readkey();
+
+        }
+
+        
+               //problem 9
+                             //        static void Main(string[] args)
+                             //        {
+                             //            float[] f=new float[3] {20.2f,18.1f,11.2f};
+                             //            Console.WriteLine("ascending order");
+                             //            Array.Sort(f);
+                             //            foreach(var f2 in f)
+                             //            {
+                             //                Console.WriteLine(f2);
+                             //            }
+                             //            Console.WriteLine("desending order");
+                             //            Array.Reverse(f);
+                             //            foreach(var f2 in f)
+                             //            {
+                             //                Console.WriteLine(f2);
+                             //            }
+                             //            Console.ReadKey();
+
+
+
+        //} 
+
+        //                 problem 10
+
+        //static void Main(string[] args)
+
+
+        //{
+        //    Dictionary<int, string> dict = new Dictionary<int, string>();
+        //    dict.Add(1, "Hi");
+        //    dict.Add(2, "Sry");
+        //    dict.Add(3, "morg");
+        //    Console.WriteLine("Values in Dictionary are: \n");
+        //    foreach (KeyValuePair<int, string> item in dict)
+        //    {
+        //        Console.WriteLine(item.Key + "  " + item.Value);
+
+        //    }
+        //    Console.ReadKey();
+        //}
+
+
+
+        //problem 11
+
+        //    static void Main(string[] args)
+        //    {
+        //    SortedList s1 = new SortedList();
+        //    s1.Add(3, "hi");
+        //    s1.Add(30, "hello");
+        //    s1.Add(13, "mrng");
+        //    foreach(DictionaryEntry item in s1)
+        //    {
+        //        Console.WriteLine(item.Key+ " "+item.Value);
+        //    }
+        //    Console.ReadKey();
+
+        //}
+
+        //problem 5
+
+
+
+        //static void Main(string[] args)
+        //{
+        //    int[][] classroom = new int[4][];
+
+
+        //    classroom[0] = new int[] { 1, 2, 3};
+        //    classroom[1] = new int[] { 23, 24, 6 };
+        //    classroom[2] = new int[] { 11, 23,34 };
+        //    classroom[3] = new int[] { 17, 45, 18, 53, };
+
+
+        //    for (int n = 0; n < classroom.Length; n++)
+        //    {
+
+
+        //        Console.Write("student({0}): ", n);
+
+        //        for (int k = 0; k < classroom[n].Length; k++)
+        //        {
+
+
+        //            Console.Write("{0} ", classroom[n][k]);
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //    Console.ReadLine();
+        //}
+
+
+        //problem 12
+
+
+        //static void Main(string[] args)
+        //{
+        //    int[] arr=new int[8] { 1, 3, 5, 200, 22, 2244, 213, 111};
+        //    int a = 100;
+        //    Console.WriteLine("value greater than 100;");
+        //    for(int i = 0; i < arr.Length; i++)
+        //    {
+
+        //        if(arr[i] > a)
+        //        Console.WriteLine( arr[i]);
+        //    }
+        //    Console.ReadLine();
+        //}
+
+        //problem 13
+
+
+        //static void Main(string[] args)
+        //{
+        //    int[] arr= new int[5] {2,34,45,12,55};
+        //    int max,min;
+        //    Console.WriteLine("maximun  & mivalue");
+        //    max = arr[0];
+        //    min = arr[0];
+
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        if(arr[i] > max)
+        //            max = arr[i];
+        //        if(arr[i] < min)
+        //            min = arr[i];   
+        //    }
+        //    Console.WriteLine("max value:"+max);
+        //    Console.WriteLine("min value:"+min);
+        //    Console.Read();
+        //}
+
+
+
+     
+
+
+        //problem 15
+
+
+        //public static void printFirstRepeating(int[] arr)
+        //{
+        //    int mini = -1;
+
+        //    HashSet<int> set = new HashSet<int>();
+        //    for (int i = arr.Length - 1; i >= 0; i--)
+        //    {
+      
+        //        if (set.Contains(arr[i]))
+        //        {
+        //            mini = i;
+        //        }
+
+        //        else 
+        //        {
+        //            set.Add(arr[i]);
+        //        }
+
+        //    }
+
+        //    if (mini != -1)
+        //    {
+        //        Console.WriteLine("The first repeating element is " + arr[mini]);
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("There are no repeating elements");
+        //    }
+        //    Console.ReadLine();
+
+        //}
+
+
+       
+
+        //public static void Main(string[] args)
+        //{
+        //    int[] arr = new int[] { 1, 5, 3, 12, 4, 5 };
+        //    printFirstRepeating(arr);
+        //}
+
+
+        
+
+
+    }
+}
+
